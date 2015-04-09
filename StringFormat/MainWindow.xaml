@@ -1,0 +1,30 @@
+﻿<Window x:Class="StringFormat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="String.Format" Height="250" Width="525">
+    <Grid>
+        <ScrollViewer>
+            <DockPanel LastChildFill="True">
+                <DockPanel DockPanel.Dock="Top" HorizontalAlignment="Left">
+                    <Button x:Name="btnRun" Width="100" Click="btnRun_Click" Margin="10, 10">Run</Button>
+                </DockPanel>
+                <StackPanel Margin="0, 10">
+                    <DockPanel Margin="0, 10">
+                        <Label Width="120" DockPanel.Dock="Left">With ToString():</Label>
+                        <ProgressBar x:Name="pbWithToString" Margin="10, 0"></ProgressBar>
+                    </DockPanel>
+                    <StackPanel>
+                        <Label x:Name="lblResultWithToString" Margin="125, 0, 0, 0">Idle.</Label>
+                    </StackPanel>
+                    <DockPanel Margin="0, 10">
+                        <Label Width="120" DockPanel.Dock="Left">Without ToString():</Label>
+                        <ProgressBar x:Name="pbWithoutToString" Margin="10, 0"></ProgressBar>
+                    </DockPanel>
+                    <StackPanel>
+                        <Label x:Name="lblResultWithoutToString" Margin="125, 0, 0, 0">Idle.</Label>
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
